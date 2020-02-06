@@ -12,6 +12,13 @@ const routes = [
     }
   },
   {
+    path: '/changepass',
+    name: 'changepass',
+    component: function () {
+      return import('../views/changepass.vue')
+    }
+  },
+  {
     path: '/index',
     name: 'index',
     component: function () {

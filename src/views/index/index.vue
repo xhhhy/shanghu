@@ -1,15 +1,14 @@
 <template>
   <div class="index">
-        <div class="title1">
+        <div class="title1" :style="{background: 'url( '+ imageURL +')'}" >
             <div class="titlehead">
-                     <el-col :span="3"><div class="head"> <img src="../../../public/img/logo.png" alt=""></div></el-col>
-                    <el-col :span="20"><div class="headfont">APT</div><div class="">ID：10086</div>
-                    </el-col>
+                   点击激活
             </div>
               <div class="headcont">
-                    <div class="my">我的资产 ( USDT ) </div>
-                    <div class="myprice">2,564.0000  </div>
-                    <div class="look"><router-link to="usdtmessage">查看明细</router-link> </div>
+                <div class="user"> <img src="../../../public/img/user.png" alt=""></div>
+                    <div class="my">JANGAD</div>
+                    <div class="myprice">8888.00HC </div>
+                    <div class="look"><router-link to="usdtmessage">排单</router-link> </div>
               </div>
         </div>
         <div class="cont">
@@ -45,6 +44,7 @@ export default {
   },
   data(){
     return{
+      imageURL:require("../../../public/img/user.png")
     }
   },
   methods:{
@@ -55,22 +55,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.foot{
- font-size: 13px;
-  line-height: 20px;
-  background: url("../../../public/img/5.png");
-  background-size: 100%  100%;
-  padding: 30px 0px 100px 20px; 
-  margin: 60px 20px 20px;
-  .detial{
-    margin-top: 15px;
-  background-image: linear-gradient( to right,#317afe, #419ff7);
-  width: 20%;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 12px;
-  }
-}
 
 
 

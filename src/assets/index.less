@@ -1,7 +1,8 @@
 @back:#17181d;
 @back1:#202129;
 @border:#2059ff;
-@font:#808081;
+@font:#fff;
+
 @color:#3788fb;
 
 html{
@@ -10,8 +11,8 @@ html{
     //     src: url("../bahnschrift.ttf");
     // }
     // font-family: "bahnschrift";
-    background: @back;
-    color: white;
+    background: @font;
+    color: @back;
 }
 a{
   text-decoration: none;
@@ -21,26 +22,62 @@ a{
     padding: 0;
     margin: 0;
 }
+.subbmit{
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  color: @font;
+  margin: 20px auto 40px;
+  background-color: @color;
+  border-radius: 6px;;
+}
 //home
 .home{
     text-align: center;
+    padding-left: 20px;
     .homehead{
         img{
-            margin-top: 120px;
-            width: 40%;
-
+            margin-top: 50px;
+            width: 20%;
+            margin-right: 25%;
         }
+    }
+    .fonts img{
+      position: relative;
+      left: 20px;;
+    }
+    .login{
+      font-size: 16px;text-align: left;
+      color: @back;
+      margin-top: 53%;
+      margin-bottom: 25px;;
+    }
+    .el-input-group__append, .el-input-group__prepend{
+      vertical-align: center!important;
+    }
+    .send{
+
+      height: 40px;
+      line-height: 40px;
+      padding-top: 0;
     }
     .el-form {
         margin-top: 40px;
         padding-bottom: 40px;
     }
     .homeform{
-
         margin: 20px;
         border-top: 3px solid @border;
         background-color:@back1 ;
         margin-top: 60px;
+    }
+
+    .loosepass{
+      font-size: 14px;
+      text-align: right;
+      padding-right: 20px;
+      margin-bottom: 25px;;
+
     }
     .el-input{
         width: 100%;
@@ -49,13 +86,11 @@ a{
         margin-left: 0px!important;
     }
     .el-input__inner{
-        border: none;
         width: 90%;
         margin: 3px auto;
-        background: @back1;
-        color: @font;
-        border-bottom: 1px solid @font;
         padding-left:0 ;
+        padding-left: 10px!important;
+        margin-bottom: 20px;
 
     }
     .el-form-item__error{
@@ -100,17 +135,15 @@ a{
 
 //pin
 .home{
-
     .pay-tool{
     background: #fff;
-    color: black;
+    color:@font;
      min-height: 57vh!important;
   }
   }
 
 @media(max-height: 650px){
     .home{
-
       .pay-tool{
       background: #fff;
       color: black;
@@ -121,7 +154,8 @@ a{
   //index
   .index{
   .titlehead{
-    margin-bottom: 60px;
+    color: @font;
+    margin-bottom: 20px;
     padding-left: 20px;
     .head{
       img{
@@ -129,34 +163,42 @@ a{
       }
     }
 }
+.user img{
+  width: 60px;
+  height: 60px;
+  border: 2px solid @font;
+  border-radius: 50%;
+}
 .title1{
+  color: @font;
     font-size: 13px;
   line-height: 20px;
-  background: url("../../public/img/2.png");
-  background-size: 100%;
-  padding: 30px 0px 20px 0px; 
+  background-repeat: no-repeat;
+  background-size: 100%!important;
+  background-color: @color;
+  padding: 20px 0px 20px 0px; 
 }
 .look{
-  width: 30%;
+  width: 60%;
   height: 30px;
   line-height: 30px;
-  border-radius: 10px;
-  margin: 30px auto 27px;
+  margin: 10px auto 10px;
+  opacity: 1;
+  border: 1px solid @font;
   margin-top: 30px;
-
-  background: #fff;
-  color: @color
+  a{
+  color: @font
+    
+  }
 }
 .myprice{
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.5
 }
 
 .headcont{
   padding-left: 0;
-
   text-align: center;
-
 }
 .cont{
     text-align: center;
